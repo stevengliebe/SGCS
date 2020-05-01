@@ -1,0 +1,35 @@
+// vscode-buttons config
+{
+    "buttons": [
+        {
+            "name": "Push to GitHub",
+            "script": "git push origin master --tags",
+            "description": "git push origin master --tags"
+        },
+        {
+            "name": "Deploy to WP.org",
+            "script": "./deploy",
+            "description": "./deploy (tag or readme/assets)"
+        },
+        {
+            "name": "Plugin Folder",
+            "script": "open . && exit",
+            "description": "Project Repo"
+        },
+        {
+            "name": "Product Folder",
+            "script": "open $CT_PLUGIN_PRODUCTS'/Widget Importer & Exporter' && exit",
+            "description": "Supplemental files"
+        },
+        {
+            "name": "WordPress.org",
+            "script": "open https://wordpress.org/plugins/widget-importer-exporter/ && exit",
+            "description": "widget-importer-exporter"
+        },
+        {
+            "name": "GitHub",
+            "script": "open https://github.com/churchthemes/widget-importer-exporter && exit",
+            "description": "widget-importer-exporter"
+        }
+    ]
+}
