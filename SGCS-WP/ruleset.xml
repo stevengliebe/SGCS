@@ -12,7 +12,7 @@
 	 * <config name="testVersion" value="7.1-" />
  	-->
 	<rule ref="PHPCompatibility">
-	   <include-pattern>*\.php$</include-pattern>
+		<include-pattern>*\.php$</include-pattern>
 	</rule>
 
 	<!--
@@ -21,8 +21,8 @@
 	 * <exclude-pattern>/index.php</exclude-pattern>
 	 * <exclude-pattern>*/resources/views/*</exclude-pattern>
  	-->
-    <exclude-pattern>*/node_modules/*</exclude-pattern>
-    <exclude-pattern>*/vendor/*</exclude-pattern>
+	<exclude-pattern>*/node_modules/*</exclude-pattern>
+	<exclude-pattern>*/vendor/*</exclude-pattern>
 
 	<!-- PSR1 rules -->
 	<rule ref="PSR1"/>
