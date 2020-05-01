@@ -1,4 +1,4 @@
-# SGCS - Modern PHP & WordPress Coding Standards with VS Code
+# SGCS: Modern PHP & WordPress Coding Standards w/VS Code
 
 *This was put together for my own purposes. Feel free to use and modify however you see fit.*
 
