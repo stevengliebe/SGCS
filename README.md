@@ -2,7 +2,7 @@
 
 *This was put together for my own purposes. Feel free to use and modify however you see fit.*
 
-These are my PHP and WordPress rulesets for [PHPCS](https://github.com/squizlabs/PHP_CodeSniffer). [WPCS](https://github.com/WordPress/WordPress-Coding-Standards) rules that conflict with the more modern [PHP PSR](https://www.php-fig.org/psr/) rules are excluded. [PHPCompatibility](https://github.com/PHPCompatibility/PHPCompatibility) is used. My purpose is modern PHP development within WordPress projects without totally abandoning WordPress coding standards.
+These are my PHP and WordPress rulesets for [PHPCS](https://github.com/squizlabs/PHP_CodeSniffer). [WPCS](https://github.com/WordPress/WordPress-Coding-Standards) rules that conflict with the more modern [PHP PSR](https://www.php-fig.org/psr/) standards are excluded. [PHPCompatibility](https://github.com/PHPCompatibility/PHPCompatibility) is included. My purpose is modern PHP development within WordPress projects without totally abandoning the WordPress coding standards.
 
 - **PHPCS-PHP** is used for PHP (non-WordPress) projects
 - **PHPCS-WP** is used for WordPress plugins and themes (not a WordPress installation)
@@ -113,7 +113,7 @@ cd ~/bin/SGCS && git pull
 
 ### VS Code Buttons
 
-It's handy to make a button in VS Code with `buttons.jsonc` ([vscode-buttons](https://marketplace.visualstudio.com/items?itemName=stuartthomson.vscode-buttons) extension) tp update PHPCS and the rulesets with one click.
+It's handy to make a button in VS Code with `buttons.jsonc` ([vscode-buttons](https://marketplace.visualstudio.com/items?itemName=stuartthomson.vscode-buttons) extension) to update PHPCS and the rulesets with one click.
 
 ```json
 {
@@ -121,7 +121,7 @@ It's handy to make a button in VS Code with `buttons.jsonc` ([vscode-buttons](ht
         {
             "name": "Update PHPCS",
             "script": "cd ~/bin/phpcs && git pull; cd ~/bin/wpcs && git pull; cd ~/bin/PHPCompatibility && git pull; cd ~/bin/SGCS && git pull",
-            "description": "Pull latest Git repos (PHPCompatibility too)"
+            "description": "Pull latest Git repos"
         }
     ]
 }
