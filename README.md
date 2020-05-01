@@ -11,7 +11,7 @@ These instructions are geared towards [VS Code](https://code.visualstudio.com/) 
 
 ## Installation
 
-First make sure you have (Composer](https://getcomposer.org/) installed (I like [Homebrew](https://brew.sh/) for that).
+First make sure you have [Composer](https://getcomposer.org/) installed (I like [Homebrew](https://brew.sh/) for that).
 
 ```sh
 # Make and change into ~/bin dir.
@@ -68,7 +68,7 @@ phpcs -i
 "phpcbf.executablePath": "/usr/local/bin/phpcbf",
 ```
 
-### phpcs.xml Examples ###
+### phpcs.xml Examples
 
 Here's an example `phpcs.xml` file for a PHP (non-WordPress) project. It uses the **SGCS-PHP** ruleset.
 
@@ -100,7 +100,7 @@ Below uses **SGCS-WP** for a WordPress project and also checks code for compatib
 
 ## Updating
 
-### Command Line ###
+### Command Line
 
 Just pull the Git repos to update the rules.
 
@@ -111,7 +111,7 @@ cd ~/bin/PHPCompatibility && git pull
 cd ~/bin/SGCS && git pull
 ```
 
-### VS Code Buttons ###
+### VS Code Buttons
 
 It's handy to make a button in VS Code with `buttons.jsonc` ([vscode-buttons](https://marketplace.visualstudio.com/items?itemName=stuartthomson.vscode-buttons) extension) tp update PHPCS and the rulesets with one click.
 
@@ -126,4 +126,5 @@ It's handy to make a button in VS Code with `buttons.jsonc` ([vscode-buttons](ht
     ]
 }
 ```
+
 License: MIT
