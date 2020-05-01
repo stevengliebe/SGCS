@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<ruleset name="SGCS-PHP">
+
+	<description>Steven Gliebe's coding standards for PHP projects. Same as SGCS-WP but with WordPress rules excluded.</description>
+
+	<!-- PHPSG-WP rules -->
+	<rule ref="SGCS-WP"/>
+
+	<!-- Exclude all WordPress rules -->
+	<rule ref="WordPress">
+		<exclude name="WordPress"/>
+	</rule>
+
+</ruleset>

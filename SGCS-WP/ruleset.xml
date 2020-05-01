@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+<ruleset name="SGCS-WP">
+
+	<description>Steven Gliebe's coding standards for WordPress plugins and themes.</description>
+
+	<!--
+	 * Per Project: PHPCompatibility rules
+	 *
+	 * Add the following config to a project's own phpcs.xml file to check that code is compatible
+	 * with PHP x.x and earlier. Match version to "Requires PHP" min. version in plugin main file.
+	 *
+	 * <config name="testVersion" value="7.1-" />
+ 	-->
+	<rule ref="PHPCompatibility">
+	   <include-pattern>*\.php$</include-pattern>
+	</rule>
+
+	<!--
+	 * Exclude files and folders.
+	 *
+	 * <exclude-pattern>/index.php</exclude-pattern>
+	 * <exclude-pattern>*/resources/views/*</exclude-pattern>
+ 	-->
+    <exclude-pattern>*/node_modules/*</exclude-pattern>
+    <exclude-pattern>*/vendor/*</exclude-pattern>
+
+	<!-- PSR1 rules -->
+	<rule ref="PSR1"/>
+
+	<!-- PSR2 rules all excluded (superceded by PSR12). -->
+	<rule ref="PSR2">
+		<exclude name="PSR2"/>
+	</rule>
+
+	<!-- PSR12 rules (supercedes PSR2); excluding some. -->
+	<rule ref="PSR12">
+		<exclude name="PSR12.Files.FileHeader.SpacingAfterBlock"/>
+	</rule>
+
+	<!-- WordPress rules, excluding some -->
+	<rule ref="WordPress">
+		<exclude name="WordPress.Arrays.ArrayDeclarationSpacing.NoSpaceBeforeArrayCloser"/>
+		<exclude name="WordPress.Arrays.ArrayDeclarationSpacing.SpaceBeforeArrayCloser"/>
+		<exclude name="WordPress.Arrays.CommaAfterArrayItem.NoComma"/>
+		<exclude name="WordPress.Files.FileName.InvalidClassFileName"/>
+		<exclude name="WordPress.Files.FileName.NotHyphenatedLowercase"/>
+		<exclude name="WordPress.NamingConventions.ValidHookName.UseUnderscores"/>
+		<exclude name="WordPress.WhiteSpace.DisallowInlineTabs.NonIndentTabsUsed"/>
+		<exclude name="WordPress.NamingConventions.ValidFunctionName.MethodNameInvalid"/>
+		<exclude name="WordPress.PHP.DevelopmentFunctions.error_log_print_r"/>
+		<exclude name="WordPress.WhiteSpace.ControlStructureSpacing"/>
+		<exclude name="WordPress.WhiteSpace.OperatorSpacing"/>
+		<exclude name="WordPress.Arrays.ArrayDeclarationSpacing"/>
+		<exclude name="WordPress.Arrays.ArrayKeySpacingRestrictions"/>
+	</rule>
+
+	<!-- Generic rules, excluding some -->
+	<rule ref="Generic">
+		<exclude name="Generic.Formatting.NoSpaceAfterCast.SpaceFound"/>
+		<exclude name="Generic.Arrays.ArrayIndent.KeyIncorrect"/>
+		<exclude name="Generic.Arrays.DisallowLongArraySyntax.Found"/>
+		<exclude name="Generic.Arrays.DisallowShortArraySyntax.Found"/>
+		<exclude name="Generic.Files.EndFileNoNewline.Found"/>
+		<exclude name="Generic.Files.InlineHTML.Found"/>
+		<exclude name="Generic.Files.LineLength.TooLong"/>
+		<exclude name="Generic.Files.LowercasedFilename.NotFound"/>
+		<exclude name="Generic.Functions.OpeningFunctionBraceBsdAllman.BraceOnSameLine"/>
+		<exclude name="Generic.NamingConventions.CamelCapsFunctionName.NotCamelCaps"/>
+		<exclude name="Generic.PHP.ClosingPHPTag.NotFound"/>
+		<exclude name="Generic.PHP.UpperCaseConstant.Found"/>
+		<exclude name="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+		<exclude name="Generic.WhiteSpace.DisallowTabIndent.NonIndentTabsUsed"/>
+		<exclude name="Generic.Classes.OpeningBraceSameLine"/>
+		<exclude name="Generic.ControlStructures.DisallowYodaConditions.Found"/>
+		<exclude name="Generic.Functions.OpeningFunctionBraceKernighanRitchie.BraceOnNewLine"/>
+		<exclude name="Generic.WhiteSpace.ArbitraryParenthesesSpacing.SpaceAfterOpen"/>
+		<exclude name="Generic.WhiteSpace.ArbitraryParenthesesSpacing.SpaceBeforeClose"/>
+	</rule>
+
+	<!-- Exclude all PEAR rules -->
+	<rule ref="PEAR">
+		<exclude name="PEAR"/>
+	</rule>
+
+	<!-- Exclude all Squiz rules -->
+	<rule ref="Squiz">
+		<exclude name="Squiz"/>
+	</rule>
+
+</ruleset>
