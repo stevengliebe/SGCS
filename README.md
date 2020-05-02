@@ -58,11 +58,15 @@ Configure VS Code `settings.json`. This is what I use.
 },
 // PHP  —————————————————————————————
 "php.suggest.basic": false,
-"intelephense.format.enable": true,
 "[php]": {
     "editor.formatOnSave": false,
     "editor.formatOnPaste": false
 },
+"intelephense.format.enable": true,
+"intelephense.stubs": [
+    // Add the defaults here or there will be problems
+    "wordpress" // added this
+],
 // PHPCS —————————————————————————————
 "phpcs.executablePath": "/usr/local/bin/phpcs",
 "phpcs.standard": "SGCS-PHP",
