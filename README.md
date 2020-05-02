@@ -46,7 +46,7 @@ Install the following VS Code extensions:
 - [Save and Run](https://marketplace.visualstudio.com/items?itemName=wk-j.save-and-run) (wk-j)
 - [PHP Intelephense](https://marketplace.visualstudio.com/items?itemName=bmewburn.vscode-intelephense-client) is also nice to have (not required)
 
-Configure VS Code `settings.json`. This is what I use.
+Configure VS Code `settings.json`. This is what I use. Tweak as needed.
 
 ```jsonc
 // FILES —————————————————————————————
