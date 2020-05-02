@@ -6,6 +6,7 @@ These are my PHP and WordPress rulesets for [PHPCS](https://github.com/squizlabs
 
 - **PHPCS-PHP** is used for PHP (non-WordPress) projects
 - **PHPCS-WP** is used for WordPress plugins and themes (not a WordPress installation)
+- **PHPCS-WP-LEGACY** is used for older WordPress plugins and themes
 
 These instructions are geared towards [VS Code](https://code.visualstudio.com/) users on macOS. Check out [Ahmad Awais](https://gist.github.com/AhmadAwais)'s excellent [VSCode.pro](https://vscode.pro) which inspired my setup.
 
