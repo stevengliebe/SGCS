@@ -40,14 +40,14 @@ phpcs -i
 
 ### VS Code
 
-1. Install the following VS Code extensions:
+Install the following VS Code extensions:
 
 - [phpcs](https://marketplace.visualstudio.com/items?itemName=ikappas.phpcs) (Ioannis Kappas)
 - [phpcbf](https://marketplace.visualstudio.com/items?itemName=persoderlind.vscode-phpcbf) (Per Soderlind)
 - [Save and Run](https://marketplace.visualstudio.com/items?itemName=wk-j.save-and-run) (wk-j)
-- [PHP Intelephense](https://marketplace.visualstudio.com/items?itemName=bmewburn.vscode-intelephense-client) is also nice to have
+- [PHP Intelephense](https://marketplace.visualstudio.com/items?itemName=bmewburn.vscode-intelephense-client) is also nice to have (not required)
 
-2. This is what I prefer for PHP and WordPress in `settings.json`. Tweak as desired.
+Configure VS Code `settings.json`. This is what I use.
 
 ```jsonc
 // FILES —————————————————————————————
