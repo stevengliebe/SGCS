@@ -4,8 +4,8 @@
 
 These are my PHP and WordPress rulesets for [PHPCS](https://github.com/squizlabs/PHP_CodeSniffer). [WPCS](https://github.com/WordPress/WordPress-Coding-Standards) rules that conflict with the more modern [PHP PSR](https://www.php-fig.org/psr/) standards are excluded. [PHPBFC](https://github.com/squizlabs/PHP_CodeSniffer/wiki/Fixing-Errors-Automatically) is used to beautiful code automatically on save. [PHPCompatibility](https://github.com/PHPCompatibility/PHPCompatibility) is included. My purpose is modern PHP development within WordPress projects without totally abandoning the WordPress coding standards.
 
-- **PHPCS-PHP** is used for PHP (non-WordPress) projects
-- **PHPCS-WP** is used for WordPress plugins and themes (not a WordPress installation)
+- **SGCS-PHP** is used for PHP (non-WordPress) projects
+- **SGCS-WP** is used for WordPress plugins and themes (not a WordPress installation)
 
 These instructions are geared towards [VS Code](https://code.visualstudio.com/) users on macOS. Check out [Ahmad Awais](https://gist.github.com/AhmadAwais)'s excellent [VSCode.pro](https://vscode.pro) which inspired my setup.
 
