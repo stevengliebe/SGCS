@@ -52,6 +52,7 @@
 		<exclude name="WordPress.WhiteSpace.OperatorSpacing"/>
 		<exclude name="WordPress.Arrays.ArrayDeclarationSpacing"/>
 		<exclude name="WordPress.Arrays.ArrayKeySpacingRestrictions"/>
+		<exclude name="WordPress.NamingConventions.ValidVariableName.VariableNotSnakeCase"/>
 	</rule>
 
 	<!-- Generic rules, excluding some -->
